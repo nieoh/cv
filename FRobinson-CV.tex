@@ -22,11 +22,9 @@
 \firstname{Frederick}
 \familyname{Robinson}
 
-
-
 \address{Los Angeles, CA}
-\phone{321.613.8838}                    % optional, remove the line if not wanted
-\email{frederick.robinson@gmail.com}                      % optional, remove the line if not wanted
+\phone{321.613.8838}
+\email{frederick.robinson@gmail.com}
 
 
 %\homepage{http://gr.linkedin.com/pub/stefania-dakourou/41/21a/396}%{LinkedIn Profile}}           
@@ -37,9 +35,6 @@
 \renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
 \makeatother
 
-% bibliography with mutiple entries
-%\usepackage{multibib}
-%\newcites{book,misc}{{Books},{Others}}
 
 \nopagenumbers{}                    
 
@@ -47,7 +42,6 @@
 \maketitle
 
 \section{Education}
-%\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
 \cventry{2012}{Bachelor in Mathematics with Honors}{Northwestern University}{}{}{}  
 \cventry{2008}{High School Diploma}{}{}{}{} 
 
@@ -59,16 +53,30 @@
 \cvline{Supervisors}{David Nadler}
 \cvline{Description}{\small An investigation of Persistant Homology: ``an algebraic method for measuring topological features of shapes and functions''} 
 
-
 \section{Computer skills}
-\cvcomputer{Proficient}{Microsoft Office, \LaTeX}{}{}
+\cvline{Proficient}{\small Go,  Mathematica, Python}
+\cvline{Basic}{\small Java, C}
+\cvline{Miscellaneous}{\small Windows, Microsoft Office, Linux, \LaTeX}
 
 \section{Qualities}
 \cvline{Personal skills:}{Strong analytical, problem-solving and communication skills, eager to learn and develop new skills}
 \cvline{Experience with:}{ }
 
+\section{Jobs}
+\cventry{2012-2013}{Teaching Assistant}{Description}{}{}{}
+
+
+\section{Research Programs}
+\cventry{Date}{Tropical Geometry}{Description}{}{}{}
+\cventry{Date}{ANT}{Description}{}{}{}
+\cventry{Date}{Indiana REU}{Description}{}{}{}
+
 \section{Languages}
 \cvlanguage{English}{Fluent}{}
 \cvlanguage{Spanish}{Proficient}{}
+
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications} 
 
 \end{document}
