@@ -1,86 +1,89 @@
 \documentclass[11pt,a4paper,unicode]{moderncv}
 
 % moderncv themes
-\moderncvtheme{classic}                  % optional argument are 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
-%\moderncvtheme[green]{classic}                % idem
+\moderncvtheme{classic} % optional argument are 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
 
 % character encoding
-\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+\usepackage[utf8]{inputenc} % replace by the encoding you are using
 
 % adjust the page margins
 \usepackage[scale=0.85]{geometry}
-%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
-%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
-%\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+% \setlength{\hintscolumnwidth}{3cm} % if you want to change the width of the column with the dates
+% \AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}} % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+% \AtBeginDocument{\recomputelengths} % required when changes are made to page layout lengths
 
 % Hyperlinks
-\usepackage[unicode]{hyperref}								% to use hyperlinks
-\definecolor{linkcolour}{rgb}{0,0.2,0.6}			% hyperlinks setup
+\usepackage[unicode]{hyperref} % to use hyperlinks
+\definecolor{linkcolour}{rgb}{0,0.2,0.6} % hyperlinks setup
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
 
 
-\firstname{Stephanie}
-\familyname{Oh}
+\firstname{Stephanie} \familyname{Oh}
 
-\address{Los Angeles, CA}
-\phone{224.603.2085}
-\email{oh.stephanie.s@gmail.com}
-\homepage{http://www.linkedin.com/pub/stephanie-oh/35/95a/904}
+\address{Los Angeles, CA} \phone{224.603.2085} \email{oh.stephanie.s@gmail.com}
+\homepage{www.linkedin.com/in/ohstephanie}
  
 
 % to show numerical labels in the bibliography; only useful if you make citations in your resume
-\makeatletter
-\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
-\makeatother
+\makeatletter \renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}} \makeatother
 
-
-\nopagenumbers{}                    
+\nopagenumbers{}
 
 \begin{document}
 
 \maketitle
 
-
 \section{Education}
-\cventry{2013}{Masters of Science in Mathematics}{Purdue University}{West Lafayette, IN}{\textit{3.6/4.0}}{}
-\cventry{2011}{Bachelor of Arts in Mathematics with Honors}{Northwestern University}{Evanston, IL}{\textit{3.64/4.0}}{Senior Thesis on Expander Graphs}  
-\cventry{2007}{High School Diploma}{The Hill School}{Pottstown, PA}{}{} 
+\cventry{2013}{Masters of Science in Mathematics}{Purdue University}{West Lafayette,
+  IN}{\textit{3.6/4.0}}{Recipient of fellowships for outstanding PhD-track students}
 
+\cventry{2011}{Bachelor of Arts in Mathematics with Honors}{Northwestern University}{Evanston,
+  IL}{\textit{3.64/4.0}}{Thesis on Expander Graphs; Recipient of merit scholarships for outstanding
+  academic achievement} \cventry{2007}{High School Diploma}{The Hill School}{Pottstown, PA}{}{}
 
-\section{Honors and Awards}
-\cvline{2011-2013}{\small Ross Fellowship: For recruitment of outstanding PhD-track students}{}{}{}{}
-\cvline{2011-2012}{\small Myer Jerison Scholarship: For new graduate students who show exceptional promise}{}{}{}{}
-\cvline{2010-2011}{\small Mortar Board member: Selected to become a member of the national honor society recognizing college seniors for their exemplary scholarship, leadership and service.}{}{}{}{}
-\cvline{2008-2011}{\small J.G. Nolan Scholarship: Northwestern scholarship for an undergraduate demonstrate academic achievement}{}{}{}{}
-\cvline{2009-2011}{\small Max F. \& Elsie Brack Scholarship: Northwestern scholarship for an undergraduate majoring in business, mathematics, or the physical sciences who demonstrate academic achievement.}{}{}{}{}
-
-
-
-
-\section{Computer skills}
-\cvline{Proficient}{\small Go,  Mathematica, Python}
-\cvline{Basic}{\small Java, C}
-\cvline{Miscellaneous}{\small Windows, Microsoft Office, Linux, \LaTeX}
-
-
-\section{Qualities}
-\cvline{Personal skills:}{Strong analytical, problem-solving and communication skills, eager to learn and develop new skills}
-\cvline{Experience with:}{ }
+\cventry{2009-2010}{Budapest Semesters in Mathematics}{Budapest, Hungary}{}{}{}
 
 \section{Jobs}
-\cventry{2012-2013}{Teaching Assistant}{Description}{}{}{}
+\cventry{2013}{Junior Wolfram Alpha Developer}{Create and maintain math content for
+  wolframalpha.com. Developed tutorials for Wolfram Language.}{}{}{}
 
+\cventry{2012-2013}{Teaching Assistant}{Administered and graded quizzes and conducted recitation for
+  about 100 students in Calculus I and II at Purdue University.}{}{}{}
 
-\section{Research Programs}
-\cventry{Date}{Tropical Geometry}{Description}{}{}{}
-\cventry{Date}{ANT}{Description}{}{}{}
-\cventry{Date}{Indiana REU}{Description}{}{}{}
+\section{Professional Affiliations and Development}
+\cvline{2011-2013}{Member of American Mathematical Society}{}{}{}{}
 
+\cvline{2011}{Presented a poster on Expander graphs at the Joint Mathematics Meeting, the largest
+  international math conference.}{}{}{}{}
+
+\cvline{2010-2011}{Member of Mortar Board national honor society recognizing college seniors for
+  their exemplary scholarship, leadership and service.}{}{}{}{}
+
+\cvline{2010}{Undergraduate research program studying Expander Graphs with professor Darren Long.}
+
+\cvline{2009}{Attended the Nebraska conference for undergraduate women in mathematics.}
+
+\cvline{2008}{Selected for participation in Carleton College Summer Math Program for Women.}{}{}{}{}
+
+\section{Computer skills}
+\cvline{Proficient}{Mathematica, Python}
+
+\cvline{Basic}{Java, C}
+
+\cvline{Miscellaneous}{Microsoft Office, Linux, \LaTeX}
+
+\section{Qualities}
+\cvline{Personal skills:}{Strong analytical, problem-solving and communication skills, eager to
+  learn and develop new skills. Ability to produce creative solutions.}  \cvline{Experience
+  with:}{Working in a small team to conceive and develop a new product.}
 
 \section{Languages}
-\cvlanguage{English}{Fluent}{}
-\cvlanguage{Spanish}{Proficient}{}
+\cvline{Fluent}{English, Korean}{} \cvline{Basic}{French, German}{}
 
+\section{Extracurricular}
+\cvline{Interests:}{Traveling, playing the piano, cycling and cooking.}
 
+\cvline{Volunteering:}{Participated in a clinical trip providing free medical attention in southern
+  Vietnam.  \newline Tutored Korean K-12 students in math and English}
 
 \end{document}
