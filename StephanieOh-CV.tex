@@ -2,7 +2,7 @@
 
 % moderncv themes
 \moderncvtheme{classic} % optional argument are 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
-
+\usepackage{lipsum}
 % character encoding
 \usepackage[utf8]{inputenc} % replace by the encoding you are using
 
@@ -16,6 +16,7 @@
 \usepackage[unicode]{hyperref} % to use hyperlinks
 \definecolor{linkcolour}{rgb}{0,0.2,0.6} % hyperlinks setup
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
 
 
 \firstname{Stephanie} \familyname{Oh}
@@ -45,7 +46,7 @@
 \cventry{2009-2010}{Budapest Semesters in Mathematics}{Budapesti M\H{u}szaki \'{e}s Gazdas\'{a}gtudom\'{a}nyi Egyetem}{Budapest, Hungary}{}{}
 
 \section{Jobs}
-\cventry{2013}{Junior Wolfram Alpha Developer}{Create and maintain math content for
+\cventry{2013}{Developer}{Create and maintain math content for
   \url{wolframalpha.com} from simple arithmetic operations through college level calculus material. \newline \listitemsymbol Helped launch \url{wolframalpha.com/problem-generator} by testing and debugging the random problem generation feature and polishing language. \newline \listitemsymbol Work in a small team to conceive and develop tutorials for Wolfram Language -- a functional programming language used in Mathematica -- targeted towards first time programmers and hobbyists. \newline \listitemsymbol Use gamification and visual aid to produce creative methods of explaining programming and mathematical concepts}{}{}{} 
 
 \cventry{2012-2013}{Teaching Assistant}{Administered and graded quizzes and conducted recitation for
@@ -88,5 +89,39 @@
 
 %\cvline{Community service:}{Participated in a clinical trip providing free medical attention in southern
 %  Vietnam.  \newline Tutored Korean K-12 students in math and English.}
+
+%=====================================================
+% Cover Letter
+%=====================================================
+\clearpage
+
+\recipient{HR Departmnet}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+\date{\today} % Letter date
+\opening{Dear Sir or Madam,} % Opening greeting
+\closing{Sincerely yours,} % Closing phrase
+\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+
+\makelettertitle % Print letter title
+
+Going into math grad school, I thought I would stay in academia, in particular mathematics, forever. I soon realized grad school wasn't for me. I thought maybe it was the lack of real-life application so I got a job at Wolfram where I could still stay in touch with my mathematical knowledge, and not just the analytical skills I had developed in grad school, but applying it directly to math content management. Programming was just an added bonus. However, after a few months at Wolfram, I realized that the part of grad school I enjoyed wasn't just the mathematical knowledge and the part of grad school I disliked wasn't just the lack of application. 
+
+Parts of grad school I enjoyed:
+\\- Problem solving: Sitting down with a particular tough question, trying out different paths of solutions, asking my peers for help and brainstorming together to finally solve the problem.
+\\- Having a dictionary of highly technical vocabulary: Plainly put, I like technical jargon. We make up words with specific definitions to make communication within the field easier. 
+\\- Teaching: Not in contrast, but in queue with my previous point, I enjoy explaining technical details in layman's terms. Highly specialized vocabulary has its place when brainstorming with colleagues but once a solution has been found, relaying the information to others who weren't part of your original discussion or even a student who doesn't have the proper background, I find extremely rewarding.
+\\- Colleagues: I enjoy being around knowledgeable and logical and ambitious and motivated people. 
+
+Parts of grad school I didn't enjoy:
+\\- Lack of opportunities to explore different subjects: Grad school is very specialized; I like to dabble in a variety of things. Very adaptible.
+\\- Lack of application (my particular field): Rewarding to see real life results and feedback.
+\\- Slow pace: I need something more stimulating. Grad school is very sedentary. I like a place with travel opportunity (adapt quickly to change in location), having to be "on-call" 24/7 in face of a deadline. I need to be able to deliver results.
+
+
+Some place with the opportunity to grow.
+
+\lipsum[1] % Dummy text
+
+\makeletterclosing % Print letter signature
+
 
 \end{document}
