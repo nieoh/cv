@@ -1,5 +1,6 @@
 \documentclass[11pt,a4paper,unicode]{moderncv}
 
+
 % moderncv themes
 \moderncvtheme{classic} % optional argument are 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
 % character encoding
@@ -14,6 +15,7 @@
 % Hyperlinks
 \usepackage[unicode]{hyperref} % to use hyperlinks
 \definecolor{linkcolour}{rgb}{0,0.2,0.6} % hyperlinks setup
+\definecolor{red}{rgb}{1, 0, 0} % red color
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
 
 
@@ -34,6 +36,14 @@
 \vspace*{-10mm}
 \maketitle
 \vspace*{-10mm}
+
+\section{Jobs}
+\cventry{2013}{Developer for Wolfram Research}{Create and maintain continuously deployed math content for
+  \url{wolframalpha.com} from simple arithmetic through college level calculus. \newline \listitemsymbol Helped launch \url{wolframalpha.com/problem-generator} by testing and debugging the random problem generation feature and polishing language. \newline \listitemsymbol Work in a small team to conceive and develop tutorials for Wolfram Language -- a data-based functional programming language used in Mathematica -- targeted towards first time programmers and hobbyists. \newline \listitemsymbol Use gamification and visual aid to produce creative content for explaining programming with large data sets}{}{}{} 
+
+\cventry{2012-2013}{Teaching Assistant}{Administered and graded quizzes and conducted recitation for
+  179 students in Calculus I and II at Purdue University}{}{}{}
+
 \section{Education}
 \cventry{2013}{Masters of Science in Mathematics}{Purdue University}{West Lafayette,
   IN}{\textit{3.6/4.0}}{Recipient of fellowships for outstanding PhD-track students.}
@@ -44,12 +54,6 @@
 
 \cventry{2009-2010}{Budapest Semesters in Mathematics}{Budapesti M\H{u}szaki \'{e}s Gazdas\'{a}gtudom\'{a}nyi Egyetem}{Budapest, Hungary}{}{}
 
-\section{Jobs}
-\cventry{2013}{Developer}{Create and maintain math content for
-  \url{wolframalpha.com} from simple arithmetic operations through college level calculus material. \newline \listitemsymbol Helped launch \url{wolframalpha.com/problem-generator} by testing and debugging the random problem generation feature and polishing language. \newline \listitemsymbol Work in a small team to conceive and develop tutorials for Wolfram Language -- a functional programming language used in Mathematica -- targeted towards first time programmers and hobbyists. \newline \listitemsymbol Use gamification and visual aid to produce creative methods of explaining programming and mathematical concepts}{}{}{} 
-
-\cventry{2012-2013}{Teaching Assistant}{Administered and graded quizzes and conducted recitation for
-  179 students in Calculus I and II at Purdue University}{}{}{}
 
 \section{Professional Affiliations and Development}
 \cvline{2013}{Attended the Wolfram Technology Conference.}{}{}{}{}
@@ -62,7 +66,7 @@
 \cvline{2010-2011}{Member of Mortar Board national honor society recognizing college seniors for
   their exemplary scholarship, leadership and service.}{}{}{}{}
 
-\cvline{2010}{Undergraduate research program funded by an NSF grant studying Expander Graphs with professor Darren Long at the University of California, Santa Barbara.}
+\cvline{2010}{Participated in an undergraduate research program funded by an NSF grant researching Expander Graphs with professor Darren Long at the University of California, Santa Barbara.}
 
 \cvline{2009}{Attended the Nebraska Conference for Undergraduate Women in Mathematics.}
 
@@ -73,7 +77,7 @@
 
 \cvline{Basic}{Java, C}
 
-\cvline{Miscellaneous}{Microsoft Office, Linux, \LaTeX}
+\cvline{Miscellaneous}{Microsoft Office, Linux, \LaTeX, Camtasia}
 
 %\section{Qualities}
 %\cvline{Personal skills:}{Strong analytical, problem-solving and communication skills; eager to
@@ -92,6 +96,36 @@
 %=====================================================
 % Cover Letter
 %=====================================================
+\clearpage
+
+\recipient{\textcolor{red}{HR Departmnet}}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+\date{\today} % Letter date
+\opening{\textcolor{red}{Dear McKinsey Person},} % Opening greeting
+\closing{Most Sincerely,} % Closing phrase
+\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+
+\makelettertitle % Print letter title
+	I would like to apply for an \textcolor{red}{Associate position at McKinsey's Los Angeles office}. Enclosed is a copy of my CV highlighting my education and experience, including my current job as a software developer for Wolfram Research-- a computation software company and makers of Mathematica. 
+		
+\vspace{3mm}  
+Through past experience, I have gained the presentation and analytical skills ideal for succeeding at McKinsey. Working as a Calculus teaching assistant taught me how to present technical solutions effectively. Additionally, I can apply my knowledge from the tech industry to help global clients achieve the virtualization necessary to thrive in the age of this impending global resource revolution. As reported in the \emph{McKinsey Quaterly}, a fast rate of virtualization is a key indicator of a company's competitiveness. 
+
+%I received a bachelor's with honors from Northwestern University and a master's from Purdue University in Mathematics. Currently, I am working as a software developer for Wolfram Alpha LLC. 
+%I am ready to redirect my analytical skills to producing tangible results for clients as well as my leadership skills to managing ambitious and innovative projects.
+\vspace{3mm}
+At Wolfram Alpha, I often work on exploratory projects prior to team assignment. I have been successful in this position due to my unique type of leadership. I identify the strengths and personalities of my coworkers and employ their skills to add depth to my projects. For example, I was successful in presenting a comprehensive prototype for a new technical education initiative in a recent meeting with the CEO of Wolfram Alpha. I recruited a few coworkers, with whom my relationship had been strictly social, to be my UX developer and domain specific expert. Together, we were able to realize my vision and create a complete prototype to move the project into the next step of development.
+
+\vspace{3mm}
+My math background from Northwestern University and Purdue University has trained me to recognize hidden relationships in seemingly disparate concepts and to devise creative solutions to any problem. While maintaining content for wolframalpha.com, I came across a strange numerical error. I identified and fixed the error and improved the speed of the program by 1000$\%$, using skills acquired during graduate school. As the content I develop goes live weekly, I am also experienced working in a result-oriented environment.
+
+\vspace{3mm}
+I have leveraged my unique education background from four different countries to develop a creative point of view and adaptability. Unlike other applicants who may have problems adjusting to the rigorous environment at McKinsey, I am ready to use my analytical intuition to thrive at the company. 
+
+\vspace{3mm}
+Thank you for your consideration. I look forward to discussing opportunities with you.
+
+\vspace{3mm}
+\makeletterclosing % Print letter signature
 
 
 \end{document}
