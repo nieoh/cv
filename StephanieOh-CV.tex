@@ -1,5 +1,5 @@
 \documentclass[11pt,a4paper,unicode]{moderncv}
-
+ 
 
 % moderncv themes
 \moderncvtheme{classic} % optional argument are 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
@@ -11,18 +11,18 @@
 % \setlength{\hintscolumnwidth}{3cm} % if you want to change the width of the column with the dates
 % \AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}} % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
 % \AtBeginDocument{\recomputelengths} % required when changes are made to page layout lengths
-
+\usepackage{amssymb}
 % Hyperlinks
 \usepackage[unicode]{hyperref} % to use hyperlinks
 \definecolor{linkcolour}{rgb}{0,0.2,0.6} % hyperlinks setup
 \definecolor{red}{rgb}{1, 0, 0} % red color
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
 
-
+\def\labelitemi{$\centerdot$}
 
 \firstname{Stephanie} \familyname{Oh}
 
-\address{Los Angeles, CA} \phone{224.603.2085} \email{oh.stephanie.s@gmail.com}
+\address{Boston, MA} \phone{224.603.2085} \email{oh.stephanie.s@gmail.com}
 \homepage{www.linkedin.com/in/ohstephanie}
  
 
@@ -33,59 +33,97 @@
 
 \begin{document}
 
-\vspace*{-10mm}
+\vspace*{-4mm}
 \maketitle
-\vspace*{-10mm}
+\vspace*{-3mm}
 
+%===========================================================================
+%           Employment
+%===========================================================================
 \section{Employment}
-\cventry{2013}{Developer for Wolfram Research}{Create and maintain continuously deployed math content for
-  \url{wolframalpha.com} from simple arithmetic through college level calculus. \newline \listitemsymbol Helped launch \url{wolframalpha.com/problem-generator} by testing and debugging the random problem generation feature and polishing language. \newline \listitemsymbol Work in a small team to conceive and develop tutorials for Wolfram Language -- a data-based functional programming language used in Mathematica -- targeted towards first time programmers and hobbyists. \newline \listitemsymbol Use gamification and visual aid to produce creative content for explaining programming with large data sets}{}{}{} 
+\cventry{2013}{Developer}{Wolfram Research}{Boston, MA}{}{}{}
 
-\cventry{2012-2013}{Teaching Assistant}{Administered and graded quizzes and conducted recitation for
-  179 students in Calculus I and II at Purdue University}{}{}{}
+\cvline{}
+{\begin{itemize} 
+	\item Develop continuously deployed revenue generating math content for \url{wolframalpha.com}. 
+	 \item Increase cloud product adoption by working with a small team to design and gamify tutorials for company's data-based programming language. 
+	 \item Train and manage intern to contribute to company's on-going projects.
+	 \item Broaden customer base through creation of engaging multimedia content.
+	  \item Furthered company's education initiative by improving accuracy of and user experience for \url{wolframalpha.com/problem-generator} prior to its launch.
+ \end{itemize}}
+	 
+\vspace{-.5cm}
 
+
+
+\cventry{2012-2013}{Teaching Assistant}{Purdue University}{West Lafayette, IN}{}{Conducted recitation and created quizzes for
+  179 students in Calculus I and II}
+
+%===========================================================================
+%           Education
+%===========================================================================
 \section{Education}
-\cventry{2013}{Masters of Science in Mathematics}{Purdue University}{West Lafayette,
-  IN}{\textit{3.6/4.0}}{Recipient of fellowships for outstanding PhD-track students.}
 
-\cventry{2011}{Bachelor of Arts in Mathematics with Honors}{Northwestern University}{Evanston,
-  IL}{\textit{3.64/4.0}}{Honor thesis on Expander Graphs (2011); Recipient of merit scholarships for outstanding
-  academic achievement.} \cventry{2007}{High School Diploma}{The Hill School}{Pottstown, PA}{}{}
+\cventry{2013}{Master of Science in Mathematics}{Purdue University}{}{}{Recipient of fellowships for outstanding PhD-track students.}%{\textit{3.6/4.0}}
+
+\cventry{2011}{Bachelor of Arts in Mathematics with Honors}{Northwestern University}{}{}{}
+\vspace{-1mm}
+\cvline{}{\small Honor thesis on Expander Graphs (2011)}
+\vspace{-1mm}
+\cvline{}{\small Recipient of merit scholarships for outstanding academic achievement.} %{\textit{3.64/4.0}}
+  
+\cventry{2007}{High School Diploma}{The Hill School}{Pottstown, PA}{}{}
 
 \cventry{2009-2010}{Budapest Semesters in Mathematics}{Budapesti M\H{u}szaki \'{e}s Gazdas\'{a}gtudom\'{a}nyi Egyetem}{Budapest, Hungary}{}{}
 
+%===========================================================================
+%           Professional Affiliations and Development
+%===========================================================================
 
 \section{Professional Affiliations and Development}
+
 \cvline{2013}{Attended the Wolfram Technology Conference.}{}{}{}{}
 
 \cvline{2011-2013}{Member of American Mathematical Society.}{}{}{}{}
 
-\cvline{2011}{Presented a poster on Expander graphs at the Joint Mathematics Meeting, the largest
+\cvline{2011}{Presented at the Joint Mathematics Meeting, the largest
   international math conference.}{}{}{}{}
 
 \cvline{2010-2011}{Member of Mortar Board national honor society recognizing college seniors for
   their exemplary scholarship, leadership and service.}{}{}{}{}
 
-\cvline{2010}{Participated in an undergraduate research program funded by an NSF grant researching Expander Graphs with professor Darren Long at the University of California, Santa Barbara.}
+\cvline{2010}{Researched Expander Graphs as part of an NSF funded program with professor Darren Long at the University of California, Santa Barbara.}
 
 \cvline{2009}{Attended the Nebraska Conference for Undergraduate Women in Mathematics.}
 
 \cvline{2008}{Selected for and attended Carleton College's Summer Math Program for Women.}{}{}{}{}
 
+%===========================================================================
+%           Computer Skills
+%===========================================================================
+
 \section{Computer skills}
-\cvline{Proficient}{Mathematica, Python}
+
+\cvline{Proficient}{Mathematica, Python, Microsoft Excel}
 
 \cvline{Basic}{Java, C}
 
-\cvline{Miscellaneous}{Microsoft Office, Linux, \LaTeX, Camtasia}
+\cvline{Miscellaneous}{Microsoft Office, Windows, Linux, \LaTeX, Camtasia}
 
 %\section{Qualities}
 %\cvline{Personal skills:}{Strong analytical, problem-solving and communication skills; eager to
 %  learn and develop new skills; ability to design creative solutions.}  \cvline{Experience
 %  with:}{Working in a small team to conceive and develop a new product; explaining technical details in understandable terms; %training students to achieve mathematical maturity (or should I say technical proficiency?). }
 
+%===========================================================================
+%           Languages
+%===========================================================================
+
 \section{Languages}
-\cvline{Native}{English, Korean}{} \cvline{Basic}{French, German}{}
+
+\cvline{Native}{English, Korean}{} 
+
+\cvline{Basic}{French, German}{}
 
 %\section{Extracurricular}
 %\cvline{Interests:}{Traveling, playing the piano, cycling and cooking.}
