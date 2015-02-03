@@ -1,0 +1,64 @@
+\documentclass[11pt,a4paper,unicode]{moderncv}
+ 
+
+% moderncv themes
+\moderncvtheme{classic} % optional argument are 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+% character encoding
+\usepackage[utf8]{inputenc} % replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.85]{geometry}
+% \setlength{\hintscolumnwidth}{3cm} % if you want to change the width of the column with the dates
+% \AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}} % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+% \AtBeginDocument{\recomputelengths} % required when changes are made to page layout lengths
+\usepackage{amssymb}
+% Hyperlinks
+\usepackage[unicode]{hyperref} % to use hyperlinks
+\definecolor{linkcolour}{rgb}{0,0.2,0.6} % hyperlinks setup
+\definecolor{red}{rgb}{1, 0, 0} % red color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+\def\labelitemi{$\centerdot$}
+
+\firstname{Stephanie} \familyname{Oh}
+
+\address{San Francisco, CA} \phone{224.603.2085} \email{oh.stephanie.s@gmail.com}
+\homepage{www.linkedin.com/in/ohstephanie}
+ 
+
+% to show numerical labels in the bibliography; only useful if you make citations in your resume
+
+\makeatletter \renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}} \makeatother
+\nopagenumbers{}
+
+\begin{document}
+
+\vspace*{-6mm}
+
+\vspace*{-6mm}
+
+
+\recipient{{HR Department}}{MyFitnessPal} % Letter recipient
+
+\date{\today} % Letter date
+
+
+\opening{{Dear MyFitnessPal},} % Opening greeting
+\closing{Most Sincerely,} % Closing phrase
+\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+
+\makelettertitle % Print letter title
+	I would like to apply for the Software Engineer-Services position at your San Francisco office. I have attached a copy of my CV with my education and experience, including my current job as a software developer for Wolfram Research and Wolfram|Alpha. 
+			
+\vspace{3mm}  
+	I believe there are many similarities between being a software engineer at Wolfram|Alpha and MyFitnessPal; both companies rely heavily on continuous deployment and low latency systems. The bulk of my responsibilities at Wolfram include creating math content which is automatically tested and deployed on a weekly basis and maintaining and debugging the content currently available on wolframalpha.com. I believe the agile development process would translate to MyFitnessPal. In addition, wolframalpha.com is a mass user-based system, as is MyFitnessPal, so I am constantly keeping the user experience and limitations in mind while developing content. 
+	
+\vspace{3mm}  
+	The main reason for my interest lays in the culture of MyFitnessPal. I strongly believe in product's philosophy, I am a big believer that a small group of focused individuals is able to create a big and excellent product. In addition, I strive on human interaction and brainstorming with other engineers but my current position as a remote employee at Wolfram Research has limited this daily interaction for me. I hope to once again be working alongside motivated and brilliant people. 
+	
+\vspace{3mm}  
+	Thank you for your consideration. I look forward to discussing opportunities with you. For whatever it's worth, I love MyFitnessPal and try to get people around me to use it at least once, because really, that is all it takes to convert someone. 
+
+\makeletterclosing % Print letter signature
+
+\end{document}
